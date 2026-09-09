@@ -1,0 +1,26 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# 运行数据(含账号哈希 / SSH 主机凭据 / 用户报告,绝不入库)
+users.json
+config.json
+userdata/
+reports/
+generated_media/
+modeluse.db
+modeluse.db-wal
+modeluse.db-shm
+*.bak
+chat_sessions.json*
+
+# 构建产物与日志
+*.zip
+*.log
+*.tar.gz
+
+# 本地工作目录
+.zcode/
+gui-test-screenshots/

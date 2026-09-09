@@ -1,0 +1,152 @@
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 64422)
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 64421)
+Exception occurred during processing of request from ('127.0.0.1', 64420)
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 64423)
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\http\server.py", line 440, in handle
+    self.handle_one_request()
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\http\server.py", line 440, in handle
+    self.handle_one_request()
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\http\server.py", line 440, in handle
+    self.handle_one_request()
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\http\server.py", line 440, in handle
+    self.handle_one_request()
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\http\server.py", line 428, in handle_one_request
+    method()
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\http\server.py", line 428, in handle_one_request
+    method()
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\http\server.py", line 428, in handle_one_request
+    method()
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\http\server.py", line 428, in handle_one_request
+    method()
+  File "D:\qoderagent\p1\.slow_mock.py", line 56, in do_POST
+    self.wfile.write(f"data: {json.dumps(chunk, ensure_ascii=False)}\n\n".encode())
+  File "D:\qoderagent\p1\.slow_mock.py", line 56, in do_POST
+    self.wfile.write(f"data: {json.dumps(chunk, ensure_ascii=False)}\n\n".encode())
+  File "D:\qoderagent\p1\.slow_mock.py", line 56, in do_POST
+    self.wfile.write(f"data: {json.dumps(chunk, ensure_ascii=False)}\n\n".encode())
+  File "D:\qoderagent\p1\.slow_mock.py", line 56, in do_POST
+    self.wfile.write(f"data: {json.dumps(chunk, ensure_ascii=False)}\n\n".encode())
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+----------------------------------------
+----------------------------------------
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 53145)
+Exception occurred during processing of request from ('127.0.0.1', 53146)
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 53148)
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+----------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+Exception occurred during processing of request from ('127.0.0.1', 53147)
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\http\server.py", line 440, in handle
+    self.handle_one_request()
+Traceback (most recent call last):
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\http\server.py", line 440, in handle
+    self.handle_one_request()
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\http\server.py", line 428, in handle_one_request
+    method()
+  File "D:\qoderagent\p1\.slow_mock.py", line 56, in do_POST
+    self.wfile.write(f"data: {json.dumps(chunk, ensure_ascii=False)}\n\n".encode())
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\http\server.py", line 440, in handle
+    self.handle_one_request()
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\http\server.py", line 428, in handle_one_request
+    method()
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\http\server.py", line 428, in handle_one_request
+    method()
+  File "D:\qoderagent\p1\.slow_mock.py", line 56, in do_POST
+    self.wfile.write(f"data: {json.dumps(chunk, ensure_ascii=False)}\n\n".encode())
+----------------------------------------
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\http\server.py", line 440, in handle
+    self.handle_one_request()
+  File "D:\qoderagent\p1\.slow_mock.py", line 56, in do_POST
+    self.wfile.write(f"data: {json.dumps(chunk, ensure_ascii=False)}\n\n".encode())
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\http\server.py", line 428, in handle_one_request
+    method()
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+  File "D:\qoderagent\p1\.slow_mock.py", line 56, in do_POST
+    self.wfile.write(f"data: {json.dumps(chunk, ensure_ascii=False)}\n\n".encode())
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+----------------------------------------
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+  File "C:\Users\仁联集团\AppData\Roaming\uv\python\cpython-3.11.15-windows-x86_64-none\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+----------------------------------------
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
