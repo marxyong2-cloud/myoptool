@@ -9,46 +9,5 @@
       "created": "2026-09-09 10:52:02",
       "status": "active"
     },
-    {
-      "username": "chenxiangqian",
-      "salt": "7f912249077dbd6b",
-      "hash": "b20a518f4e7781c1a4d0f7c55488f8a7f77c7309be9f7c5cd86ceb251a4a8012",
-      "role": "admin",
-      "hosts": [],
-      "created": "2026-09-09 11:58:38"
-    },
-    {
-      "username": "permlab",
-      "salt": "589a72388e9d0899",
-      "hash": "7abfc16d4c2a5e535cc16997bcb039b1245d27cbf708526f4a77b5cf70f0cce5",
-      "role": "sub",
-      "hosts": [],
-      "perms": [
-        "modeluse",
-        "gateway"
-      ],
-      "status": "active",
-      "created": "2026-09-09 12:39:55"
-    },
-    {
-      "username": "zhouyifan",
-      "salt": "06388a7334c4ca08",
-      "hash": "eb432c6a0f772a6817e695e336ca4a740701b2a259d329573916fed58bac29e8",
-      "role": "admin",
-      "hosts": [],
-      "perms": [],
-      "status": "active",
-      "created": "2026-09-09 14:10:56"
-    },
-    {
-      "username": "qinyan",
-      "salt": "06328ea89ae9e6e5",
-      "hash": "0f8f8e60bc39f6514182b9235b485950f164ef9a4786b00868bb3ee5fb24a4ee",
-      "role": "admin",
-      "status": "active",
-      "created": "2026-09-09 14:44:52",
-      "hosts": [],
-      "perms": []
-    }
   ]
 }
