@@ -1,0 +1,47 @@
+{
+  "modelstart_presets": [
+    {
+      "id": "b421719c",
+      "name": "拉起推理容器",
+      "kind": "host",
+      "lang": "shell",
+      "form": "command",
+      "content": "docker run -d --gpus all --name llm-serve vllm/vllm-openai:latest",
+      "filename": "",
+      "tags": []
+    },
+    {
+      "id": "63a06bda",
+      "name": "容器内 Python 诊断",
+      "kind": "container",
+      "lang": "python",
+      "form": "script",
+      "content": "import subprocess, socket\nprint('PY-IN-CONTAINER', socket.gethostname())\nprint(subprocess.run(['ls', '/data/workspace'], capture_output=True).stdout.decode()[:100])",
+      "filename": "",
+      "tags": [
+        "诊断"
+      ]
+    }
+  ],
+  "modelstart_plans": [
+    {
+      "id": "042b731b",
+      "name": "GUI-流式验证",
+      "steps": [
+        {
+          "id": "897f8efe",
+          "kind": "host",
+          "host_id": "b7a6a388",
+          "host_group": "",
+          "runtime": "docker",
+          "container": "",
+          "namespace": "",
+          "preset_id": "",
+          "command": "venv\\Scripts\\python.exe _tick.py",
+          "continue_on_error": false,
+          "parallel": true
+        }
+      ]
+    }
+  ]
+}

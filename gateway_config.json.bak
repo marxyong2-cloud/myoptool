@@ -1,0 +1,890 @@
+{
+  "channels": [
+    {
+      "id": "3833201b",
+      "name": "Mock渠道A",
+      "base_url": "http://127.0.0.1:18999",
+      "api_key": "mock-upstream-key",
+      "protocol": "openai",
+      "types": [
+        "chat",
+        "image",
+        "video",
+        "audio",
+        "embedding"
+      ],
+      "models": [
+        "mock-chat-7b",
+        "mock-vl-2b",
+        "MiniMax-H3"
+      ],
+      "priority": 0,
+      "enabled": true,
+      "note": "",
+      "created_at": "2026-09-04 17:10:15",
+      "used": 0
+    },
+    {
+      "id": "1fa66a51",
+      "name": "渠道B",
+      "base_url": "http://127.0.0.1:18999",
+      "api_key": "mock-upstream-key",
+      "protocol": "openai",
+      "types": [
+        "chat"
+      ],
+      "models": [
+        "mock-chat-7b"
+      ],
+      "priority": 0,
+      "enabled": true,
+      "note": "",
+      "created_at": "2026-09-04 17:10:15",
+      "used": 0
+    }
+  ],
+  "keys": [
+    {
+      "key": "sk-8db529e5c1be7dc9f881576357b9ac3e",
+      "name": "绑定B",
+      "allowed_channels": [
+        "1fa66a51"
+      ],
+      "allowed_models": [],
+      "quota": 0,
+      "expires_at": "",
+      "enabled": true,
+      "used": 0,
+      "created_at": "2026-09-04 17:10:15"
+    },
+    {
+      "key": "sk-60f2a9e9b13ad4d726c988109709ea9b",
+      "name": "全量",
+      "allowed_channels": [],
+      "allowed_models": [],
+      "quota": 0,
+      "expires_at": "",
+      "enabled": true,
+      "used": 9,
+      "created_at": "2026-09-04 17:10:15"
+    }
+  ],
+  "logs": [
+    {
+      "ts": "2026-09-04 11:25:42",
+      "key": "冒烟测试密钥",
+      "channel": "Mock测试渠道",
+      "model": "mock-chat-7b",
+      "endpoint": "/v1/chat/completions",
+      "status": 200,
+      "latency_ms": 1.9,
+      "tokens_in": 6,
+      "tokens_out": 8
+    },
+    {
+      "ts": "2026-09-04 11:26:55",
+      "key": "冒烟测试密钥",
+      "channel": "Mock测试渠道",
+      "model": "mock-chat-7b",
+      "endpoint": "/v1/chat/completions",
+      "status": 200,
+      "latency_ms": 3.5,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    {
+      "ts": "2026-09-04 11:50:41",
+      "key": "冒烟测试密钥",
+      "channel": "mnh3",
+      "model": "/data/models/MiniMax-H3/FL2VA",
+      "endpoint": "/v1/chat/completions",
+      "status": 404,
+      "latency_ms": 46.7,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    {
+      "ts": "2026-09-04 11:51:02",
+      "key": "冒烟测试密钥",
+      "channel": "mnh3",
+      "model": "/data/models/MiniMax-H3/FL2VA",
+      "endpoint": "/v1/chat/completions",
+      "status": 404,
+      "latency_ms": 223.4,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    {
+      "ts": "2026-09-04 12:16:57",
+      "key": "全量密钥",
+      "channel": "Mock渠道A",
+      "model": "mock-chat-7b",
+      "endpoint": "/v1/chat/completions",
+      "status": 200,
+      "latency_ms": 205.4,
+      "tokens_in": 5,
+      "tokens_out": 4
+    },
+    {
+      "ts": "2026-09-04 12:37:58",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "mock-chat-7b",
+      "endpoint": "/v1/chat/completions",
+      "status": 200,
+      "latency_ms": 125.6,
+      "tokens_in": 5,
+      "tokens_out": 4
+    },
+    {
+      "ts": "2026-09-04 12:59:41",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "mock-chat-7b",
+      "endpoint": "/v1/chat/completions",
+      "status": 200,
+      "latency_ms": 124.9,
+      "tokens_in": 5,
+      "tokens_out": 4
+    },
+    {
+      "ts": "2026-09-04 12:59:41",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "mock-only-A",
+      "endpoint": "/v1/chat/completions",
+      "status": 200,
+      "latency_ms": 1.9,
+      "tokens_in": 6,
+      "tokens_out": 8
+    },
+    {
+      "ts": "2026-09-04 12:59:41",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "mock-chat-7b",
+      "endpoint": "/v1/messages",
+      "status": 200,
+      "latency_ms": 1.9,
+      "tokens_in": 6,
+      "tokens_out": 8
+    },
+    {
+      "ts": "2026-09-04 12:59:42",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "mock-chat-7b",
+      "endpoint": "/v1/messages",
+      "status": 200,
+      "latency_ms": 124.2,
+      "tokens_in": 5,
+      "tokens_out": 4
+    },
+    {
+      "ts": "2026-09-04 12:59:42",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "MiniMax-H3",
+      "endpoint": "/v2/video_generation",
+      "status": 200,
+      "latency_ms": 2.2,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    {
+      "ts": "2026-09-04 12:59:42",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "MiniMax-H3",
+      "endpoint": "/v2/video_regeneration",
+      "status": 200,
+      "latency_ms": 1.4,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    {
+      "ts": "2026-09-04 12:59:42",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "MiniMax-H3",
+      "endpoint": "/v2/video_regeneration",
+      "status": 200,
+      "latency_ms": 1.8,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    {
+      "ts": "2026-09-04 12:59:42",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "MiniMax-H3",
+      "endpoint": "/v2/h3_context_ir",
+      "status": 200,
+      "latency_ms": 1.8,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    {
+      "ts": "2026-09-04 12:59:42",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "MiniMax-H3",
+      "endpoint": "/v2/video_generation",
+      "status": 400,
+      "latency_ms": 1.9,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    {
+      "ts": "2026-09-04 13:01:28",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "mock-chat-7b",
+      "endpoint": "/v1/chat/completions",
+      "status": 200,
+      "latency_ms": 125.3,
+      "tokens_in": 5,
+      "tokens_out": 4
+    },
+    {
+      "ts": "2026-09-04 13:01:28",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "mock-only-A",
+      "endpoint": "/v1/chat/completions",
+      "status": 200,
+      "latency_ms": 2.0,
+      "tokens_in": 6,
+      "tokens_out": 8
+    },
+    {
+      "ts": "2026-09-04 13:01:28",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "mock-chat-7b",
+      "endpoint": "/v1/messages",
+      "status": 200,
+      "latency_ms": 2.0,
+      "tokens_in": 6,
+      "tokens_out": 8
+    },
+    {
+      "ts": "2026-09-04 13:01:28",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "mock-chat-7b",
+      "endpoint": "/v1/messages",
+      "status": 200,
+      "latency_ms": 125.2,
+      "tokens_in": 5,
+      "tokens_out": 4
+    },
+    {
+      "ts": "2026-09-04 13:01:28",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "MiniMax-H3",
+      "endpoint": "/v2/video_generation",
+      "status": 200,
+      "latency_ms": 1.7,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    {
+      "ts": "2026-09-04 13:01:28",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "MiniMax-H3",
+      "endpoint": "/v2/video_regeneration",
+      "status": 200,
+      "latency_ms": 2.0,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    {
+      "ts": "2026-09-04 13:01:28",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "MiniMax-H3",
+      "endpoint": "/v2/video_regeneration",
+      "status": 200,
+      "latency_ms": 1.9,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    {
+      "ts": "2026-09-04 13:01:28",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "MiniMax-H3",
+      "endpoint": "/v2/h3_context_ir",
+      "status": 200,
+      "latency_ms": 1.7,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    {
+      "ts": "2026-09-04 13:01:29",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "MiniMax-H3",
+      "endpoint": "/v2/video_generation",
+      "status": 400,
+      "latency_ms": 2.3,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    {
+      "ts": "2026-09-04 13:02:21",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "mock-chat-7b",
+      "endpoint": "/v1/chat/completions",
+      "status": 200,
+      "latency_ms": 124.5,
+      "tokens_in": 5,
+      "tokens_out": 4
+    },
+    {
+      "ts": "2026-09-04 13:02:21",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "mock-only-A",
+      "endpoint": "/v1/chat/completions",
+      "status": 200,
+      "latency_ms": 1.7,
+      "tokens_in": 6,
+      "tokens_out": 8
+    },
+    {
+      "ts": "2026-09-04 13:02:21",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "mock-chat-7b",
+      "endpoint": "/v1/messages",
+      "status": 200,
+      "latency_ms": 1.6,
+      "tokens_in": 6,
+      "tokens_out": 8
+    },
+    {
+      "ts": "2026-09-04 13:02:22",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "mock-chat-7b",
+      "endpoint": "/v1/messages",
+      "status": 200,
+      "latency_ms": 125.1,
+      "tokens_in": 5,
+      "tokens_out": 4
+    },
+    {
+      "ts": "2026-09-04 13:02:22",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "MiniMax-H3",
+      "endpoint": "/v2/video_generation",
+      "status": 200,
+      "latency_ms": 1.9,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    {
+      "ts": "2026-09-04 13:02:22",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "MiniMax-H3",
+      "endpoint": "/v2/video_regeneration",
+      "status": 200,
+      "latency_ms": 1.2,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    {
+      "ts": "2026-09-04 13:02:22",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "MiniMax-H3",
+      "endpoint": "/v2/video_regeneration",
+      "status": 200,
+      "latency_ms": 2.2,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    {
+      "ts": "2026-09-04 13:02:22",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "MiniMax-H3",
+      "endpoint": "/v2/h3_context_ir",
+      "status": 200,
+      "latency_ms": 2.2,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    {
+      "ts": "2026-09-04 13:02:22",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "MiniMax-H3",
+      "endpoint": "/v2/video_generation",
+      "status": 400,
+      "latency_ms": 1.8,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    {
+      "ts": "2026-09-04 14:25:11",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "mock-chat-7b",
+      "endpoint": "/v1/chat/completions",
+      "status": 200,
+      "latency_ms": 126.0,
+      "tokens_in": 5,
+      "tokens_out": 4
+    },
+    {
+      "ts": "2026-09-04 14:25:11",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "mock-only-A",
+      "endpoint": "/v1/chat/completions",
+      "status": 200,
+      "latency_ms": 1.9,
+      "tokens_in": 6,
+      "tokens_out": 8
+    },
+    {
+      "ts": "2026-09-04 14:25:11",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "mock-chat-7b",
+      "endpoint": "/v1/messages",
+      "status": 200,
+      "latency_ms": 3.0,
+      "tokens_in": 6,
+      "tokens_out": 8
+    },
+    {
+      "ts": "2026-09-04 14:25:11",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "mock-chat-7b",
+      "endpoint": "/v1/messages",
+      "status": 200,
+      "latency_ms": 124.9,
+      "tokens_in": 5,
+      "tokens_out": 4
+    },
+    {
+      "ts": "2026-09-04 14:25:11",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "MiniMax-H3",
+      "endpoint": "/v2/video_generation",
+      "status": 200,
+      "latency_ms": 3.0,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    {
+      "ts": "2026-09-04 14:25:12",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "MiniMax-H3",
+      "endpoint": "/v2/video_regeneration",
+      "status": 200,
+      "latency_ms": 1.5,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    {
+      "ts": "2026-09-04 14:25:12",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "MiniMax-H3",
+      "endpoint": "/v2/video_regeneration",
+      "status": 200,
+      "latency_ms": 1.2,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    {
+      "ts": "2026-09-04 14:25:12",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "MiniMax-H3",
+      "endpoint": "/v2/h3_context_ir",
+      "status": 200,
+      "latency_ms": 1.6,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    {
+      "ts": "2026-09-04 14:25:12",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "MiniMax-H3",
+      "endpoint": "/v2/video_generation",
+      "status": 400,
+      "latency_ms": 2.2,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    {
+      "ts": "2026-09-04 14:42:33",
+      "key": "全量",
+      "channel": "渠道B",
+      "model": "mock-chat-7b",
+      "endpoint": "/v1/chat/completions",
+      "status": 200,
+      "latency_ms": 2.1,
+      "tokens_in": 6,
+      "tokens_out": 8
+    },
+    {
+      "ts": "2026-09-04 14:42:33",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "mock-chat-7b",
+      "endpoint": "/v1/chat/completions",
+      "status": 200,
+      "latency_ms": 1.9,
+      "tokens_in": 6,
+      "tokens_out": 8
+    },
+    {
+      "ts": "2026-09-04 14:50:50",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "mock-chat-7b",
+      "endpoint": "/v1/chat/completions",
+      "status": 200,
+      "latency_ms": 124.6,
+      "tokens_in": 5,
+      "tokens_out": 4
+    },
+    {
+      "ts": "2026-09-04 14:50:50",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "mock-only-A",
+      "endpoint": "/v1/chat/completions",
+      "status": 200,
+      "latency_ms": 1.8,
+      "tokens_in": 6,
+      "tokens_out": 8
+    },
+    {
+      "ts": "2026-09-04 14:50:50",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "mock-chat-7b",
+      "endpoint": "/v1/messages",
+      "status": 200,
+      "latency_ms": 1.7,
+      "tokens_in": 6,
+      "tokens_out": 8
+    },
+    {
+      "ts": "2026-09-04 14:50:50",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "mock-chat-7b",
+      "endpoint": "/v1/messages",
+      "status": 200,
+      "latency_ms": 124.0,
+      "tokens_in": 5,
+      "tokens_out": 4
+    },
+    {
+      "ts": "2026-09-04 14:50:50",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "MiniMax-H3",
+      "endpoint": "/v2/video_generation",
+      "status": 200,
+      "latency_ms": 1.9,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    {
+      "ts": "2026-09-04 14:50:50",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "MiniMax-H3",
+      "endpoint": "/v2/video_regeneration",
+      "status": 200,
+      "latency_ms": 2.2,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    {
+      "ts": "2026-09-04 14:50:50",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "MiniMax-H3",
+      "endpoint": "/v2/video_regeneration",
+      "status": 200,
+      "latency_ms": 1.7,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    {
+      "ts": "2026-09-04 14:50:50",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "MiniMax-H3",
+      "endpoint": "/v2/h3_context_ir",
+      "status": 200,
+      "latency_ms": 1.7,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    {
+      "ts": "2026-09-04 14:50:51",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "MiniMax-H3",
+      "endpoint": "/v2/video_generation",
+      "status": 400,
+      "latency_ms": 1.5,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    {
+      "ts": "2026-09-04 17:06:59",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "mock-chat-7b",
+      "endpoint": "/v1/chat/completions",
+      "status": 200,
+      "latency_ms": 126.7,
+      "tokens_in": 5,
+      "tokens_out": 4
+    },
+    {
+      "ts": "2026-09-04 17:06:59",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "mock-only-A",
+      "endpoint": "/v1/chat/completions",
+      "status": 200,
+      "latency_ms": 1.6,
+      "tokens_in": 6,
+      "tokens_out": 8
+    },
+    {
+      "ts": "2026-09-04 17:06:59",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "mock-chat-7b",
+      "endpoint": "/v1/messages",
+      "status": 200,
+      "latency_ms": 9.2,
+      "tokens_in": 6,
+      "tokens_out": 8
+    },
+    {
+      "ts": "2026-09-04 17:07:00",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "mock-chat-7b",
+      "endpoint": "/v1/messages",
+      "status": 200,
+      "latency_ms": 125.6,
+      "tokens_in": 5,
+      "tokens_out": 4
+    },
+    {
+      "ts": "2026-09-04 17:07:00",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "MiniMax-H3",
+      "endpoint": "/v2/video_generation",
+      "status": 200,
+      "latency_ms": 2.0,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    {
+      "ts": "2026-09-04 17:07:00",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "MiniMax-H3",
+      "endpoint": "/v2/video_regeneration",
+      "status": 200,
+      "latency_ms": 2.8,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    {
+      "ts": "2026-09-04 17:07:00",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "MiniMax-H3",
+      "endpoint": "/v2/video_regeneration",
+      "status": 200,
+      "latency_ms": 1.3,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    {
+      "ts": "2026-09-04 17:07:00",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "MiniMax-H3",
+      "endpoint": "/v2/h3_context_ir",
+      "status": 200,
+      "latency_ms": 2.1,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    {
+      "ts": "2026-09-04 17:07:00",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "MiniMax-H3",
+      "endpoint": "/v2/video_generation",
+      "status": 400,
+      "latency_ms": 1.6,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    {
+      "ts": "2026-09-04 17:07:15",
+      "key": "全量",
+      "channel": "渠道B",
+      "model": "mock-chat-7b",
+      "endpoint": "/v1/chat/completions",
+      "status": 200,
+      "latency_ms": 1.3,
+      "tokens_in": 6,
+      "tokens_out": 8
+    },
+    {
+      "ts": "2026-09-04 17:07:16",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "mock-chat-7b",
+      "endpoint": "/v1/chat/completions",
+      "status": 200,
+      "latency_ms": 2.6,
+      "tokens_in": 6,
+      "tokens_out": 8
+    },
+    {
+      "ts": "2026-09-04 17:10:16",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "mock-chat-7b",
+      "endpoint": "/v1/chat/completions",
+      "status": 200,
+      "latency_ms": 126.3,
+      "tokens_in": 5,
+      "tokens_out": 4
+    },
+    {
+      "ts": "2026-09-04 17:10:16",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "mock-only-A",
+      "endpoint": "/v1/chat/completions",
+      "status": 200,
+      "latency_ms": 1.4,
+      "tokens_in": 6,
+      "tokens_out": 8
+    },
+    {
+      "ts": "2026-09-04 17:10:16",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "mock-chat-7b",
+      "endpoint": "/v1/messages",
+      "status": 200,
+      "latency_ms": 3.1,
+      "tokens_in": 6,
+      "tokens_out": 8
+    },
+    {
+      "ts": "2026-09-04 17:10:16",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "mock-chat-7b",
+      "endpoint": "/v1/messages",
+      "status": 200,
+      "latency_ms": 124.8,
+      "tokens_in": 5,
+      "tokens_out": 4
+    },
+    {
+      "ts": "2026-09-04 17:10:16",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "MiniMax-H3",
+      "endpoint": "/v2/video_generation",
+      "status": 200,
+      "latency_ms": 1.3,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    {
+      "ts": "2026-09-04 17:10:16",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "MiniMax-H3",
+      "endpoint": "/v2/video_regeneration",
+      "status": 200,
+      "latency_ms": 2.7,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    {
+      "ts": "2026-09-04 17:10:16",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "MiniMax-H3",
+      "endpoint": "/v2/video_regeneration",
+      "status": 200,
+      "latency_ms": 1.7,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    {
+      "ts": "2026-09-04 17:10:16",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "MiniMax-H3",
+      "endpoint": "/v2/h3_context_ir",
+      "status": 200,
+      "latency_ms": 1.7,
+      "tokens_in": 0,
+      "tokens_out": 0
+    },
+    {
+      "ts": "2026-09-04 17:10:16",
+      "key": "全量",
+      "channel": "Mock渠道A",
+      "model": "MiniMax-H3",
+      "endpoint": "/v2/video_generation",
+      "status": 400,
+      "latency_ms": 1.8,
+      "tokens_in": 0,
+      "tokens_out": 0
+    }
+  ],
+  "stats": {
+    "total": 73,
+    "success": 64,
+    "fail": 9,
+    "tokens_in": 194,
+    "tokens_out": 216,
+    "by_channel": {
+      "Mock测试渠道": 2,
+      "mnh3": 2,
+      "Mock渠道A": 67,
+      "渠道B": 2
+    }
+  }
+}

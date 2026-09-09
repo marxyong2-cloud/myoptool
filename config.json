@@ -1,0 +1,115 @@
+{
+  "gpu_monitors": [
+    {
+      "name": "GPU服务器 10.124.32.8",
+      "url": "http://10.124.32.8:8080"
+    }
+  ],
+  "gpu_ssh_monitors": [
+    {
+      "name": "worker32010",
+      "host": "10.124.32.10",
+      "ssh_port": 22,
+      "username": "mccxadmin",
+      "password": "mccwxadmin"
+    }
+  ],
+  "modelstart_hosts": [
+    {
+      "id": "0865e35a",
+      "name": "worker35008",
+      "host": "10.124.35.8",
+      "ssh_port": 22,
+      "username": "mccxadmin",
+      "auth": "password",
+      "password": "mccwxadmin",
+      "private_key": "",
+      "passphrase": "admin123",
+      "group": ""
+    },
+    {
+      "id": "470d64bf",
+      "name": "10.124.31.5",
+      "host": "10.124.31.5",
+      "ssh_port": 22,
+      "username": "mccxadmin",
+      "auth": "password",
+      "password": "mccwxadmin",
+      "private_key": "",
+      "passphrase": "",
+      "group": "test"
+    },
+    {
+      "id": "359ee391",
+      "name": "10.124.31.14",
+      "host": "10.124.31.14",
+      "ssh_port": 22,
+      "username": "mccxadmin",
+      "auth": "password",
+      "password": "mccwxadmin",
+      "private_key": "",
+      "passphrase": "",
+      "group": "test"
+    },
+    {
+      "id": "479eb0d3",
+      "name": "10.124.31.90",
+      "host": "10.124.31.90",
+      "ssh_port": 22,
+      "username": "mccxadmin",
+      "auth": "password",
+      "password": "mccwxadmin",
+      "private_key": "",
+      "passphrase": "",
+      "group": "test"
+    },
+    {
+      "id": "d54bdf79",
+      "name": "10.124.31.91",
+      "host": "10.124.31.91",
+      "ssh_port": 22,
+      "username": "mccxadmin",
+      "auth": "password",
+      "password": "mccwxadmin",
+      "private_key": "",
+      "passphrase": "",
+      "group": "test"
+    },
+    {
+      "id": "a4f0c8c9",
+      "name": "10.124.31.93",
+      "host": "10.124.31.93",
+      "ssh_port": 22,
+      "username": "mccxadmin",
+      "auth": "password",
+      "password": "mccwxadmin",
+      "private_key": "",
+      "passphrase": "",
+      "group": "test"
+    },
+    {
+      "id": "b32e5aa1",
+      "name": "10.124.31.94",
+      "host": "10.124.31.94",
+      "ssh_port": 22,
+      "username": "mccxadmin",
+      "auth": "password",
+      "password": "mccwxadmin",
+      "private_key": "",
+      "passphrase": "",
+      "group": "test"
+    },
+    {
+      "id": "620c60a7",
+      "name": "10.124.31.95",
+      "host": "10.124.31.95",
+      "ssh_port": 22,
+      "username": "mccxadmin",
+      "auth": "password",
+      "password": "mccwxadmin",
+      "private_key": "",
+      "passphrase": "",
+      "group": "test"
+    }
+  ]
+}

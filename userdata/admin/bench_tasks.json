@@ -1,0 +1,1820 @@
+[
+ {
+  "id": "a29dc94b",
+  "name": "/data/models/DeepSeek-V4-Pro-0813-W4AFP8-mt @ 10.124.31.77:8192/v1",
+  "model": "/data/models/DeepSeek-V4-Pro-0813-W4AFP8-mt",
+  "api_url": "http://10.124.31.77:8192/v1",
+  "framework": "OpenAI-compatible",
+  "protocol": "openai",
+  "task_type": "chat",
+  "status": "done",
+  "current_index": 15,
+  "strategy_count": 16,
+  "strategies": [
+   {
+    "name": "4并发·短入短出",
+    "concurrency": 4,
+    "total_requests": 8,
+    "input_tokens": 256,
+    "max_output_tokens": 256,
+    "lang": "zh",
+    "cache_mode": "auto",
+    "warmup_requests": 0
+   },
+   {
+    "name": "4并发·长入短出",
+    "concurrency": 4,
+    "total_requests": 8,
+    "input_tokens": 2048,
+    "max_output_tokens": 256,
+    "lang": "zh",
+    "cache_mode": "auto",
+    "warmup_requests": 0
+   },
+   {
+    "name": "4并发·短入长出",
+    "concurrency": 4,
+    "total_requests": 8,
+    "input_tokens": 256,
+    "max_output_tokens": 2048,
+    "lang": "zh",
+    "cache_mode": "auto",
+    "warmup_requests": 0
+   },
+   {
+    "name": "4并发·长入长出",
+    "concurrency": 4,
+    "total_requests": 8,
+    "input_tokens": 2048,
+    "max_output_tokens": 2048,
+    "lang": "zh",
+    "cache_mode": "auto",
+    "warmup_requests": 0
+   },
+   {
+    "name": "16并发·短入短出",
+    "concurrency": 16,
+    "total_requests": 16,
+    "input_tokens": 256,
+    "max_output_tokens": 256,
+    "lang": "zh",
+    "cache_mode": "auto",
+    "warmup_requests": 0
+   },
+   {
+    "name": "16并发·长入短出",
+    "concurrency": 16,
+    "total_requests": 16,
+    "input_tokens": 2048,
+    "max_output_tokens": 256,
+    "lang": "zh",
+    "cache_mode": "auto",
+    "warmup_requests": 0
+   },
+   {
+    "name": "16并发·短入长出",
+    "concurrency": 16,
+    "total_requests": 16,
+    "input_tokens": 256,
+    "max_output_tokens": 2048,
+    "lang": "zh",
+    "cache_mode": "auto",
+    "warmup_requests": 0
+   },
+   {
+    "name": "16并发·长入长出",
+    "concurrency": 16,
+    "total_requests": 16,
+    "input_tokens": 2048,
+    "max_output_tokens": 2048,
+    "lang": "zh",
+    "cache_mode": "auto",
+    "warmup_requests": 0
+   },
+   {
+    "name": "32并发·短入短出",
+    "concurrency": 32,
+    "total_requests": 24,
+    "input_tokens": 256,
+    "max_output_tokens": 256,
+    "lang": "zh",
+    "cache_mode": "auto",
+    "warmup_requests": 0
+   },
+   {
+    "name": "32并发·长入短出",
+    "concurrency": 32,
+    "total_requests": 24,
+    "input_tokens": 2048,
+    "max_output_tokens": 256,
+    "lang": "zh",
+    "cache_mode": "auto",
+    "warmup_requests": 0
+   },
+   {
+    "name": "32并发·短入长出",
+    "concurrency": 32,
+    "total_requests": 24,
+    "input_tokens": 256,
+    "max_output_tokens": 2048,
+    "lang": "zh",
+    "cache_mode": "auto",
+    "warmup_requests": 0
+   },
+   {
+    "name": "32并发·长入长出",
+    "concurrency": 32,
+    "total_requests": 24,
+    "input_tokens": 2048,
+    "max_output_tokens": 2048,
+    "lang": "zh",
+    "cache_mode": "auto",
+    "warmup_requests": 0
+   },
+   {
+    "name": "64并发·短入短出",
+    "concurrency": 64,
+    "total_requests": 32,
+    "input_tokens": 256,
+    "max_output_tokens": 256,
+    "lang": "zh",
+    "cache_mode": "auto",
+    "warmup_requests": 0
+   },
+   {
+    "name": "64并发·长入短出",
+    "concurrency": 64,
+    "total_requests": 32,
+    "input_tokens": 2048,
+    "max_output_tokens": 256,
+    "lang": "zh",
+    "cache_mode": "auto",
+    "warmup_requests": 0
+   },
+   {
+    "name": "64并发·短入长出",
+    "concurrency": 64,
+    "total_requests": 32,
+    "input_tokens": 256,
+    "max_output_tokens": 2048,
+    "lang": "zh",
+    "cache_mode": "auto",
+    "warmup_requests": 0
+   },
+   {
+    "name": "64并发·长入长出",
+    "concurrency": 64,
+    "total_requests": 32,
+    "input_tokens": 2048,
+    "max_output_tokens": 2048,
+    "lang": "zh",
+    "cache_mode": "auto",
+    "warmup_requests": 0
+   }
+  ],
+  "done_requests": 320,
+  "total_requests": 320,
+  "excel_file": "benchmark_data-models-DeepSeek-V4-Pro-0813-W4AFP8-mt_OpenAI-compatible_20260909_150408.xlsx",
+  "error": null,
+  "created_at": "15:04:08",
+  "owner": "admin",
+  "created_ts": 1788937448.0,
+  "created_at_full": "2026-09-09 15:04:08",
+  "random_prompt": true,
+  "sampling": {},
+  "slo_ttft_ms": null,
+  "slo_tpot_ms": null,
+  "server_meta": {},
+  "gpu_info": "",
+  "api_key": "",
+  "summaries": [
+   {
+    "name": "4并发·短入短出",
+    "config": {
+     "name": "4并发·短入短出",
+     "concurrency": 4,
+     "total_requests": 8,
+     "input_tokens": 256,
+     "max_output_tokens": 256,
+     "lang": "zh",
+     "cache_mode": "auto",
+     "warmup_requests": 0
+    },
+    "summary": {
+     "success_count": 4,
+     "failed_count": 4,
+     "error_rate": 0.5,
+     "error_groups": {
+      "连接被拒 — 服务未监听该端口,或地址/端口写错": 4
+     },
+     "error_buckets": {
+      "connection": 4
+     },
+     "warmup_count": 0,
+     "ttft_ms": {
+      "avg": 5067.62,
+      "p25": 5062.84,
+      "p50": 5081.64,
+      "p75": 5086.43,
+      "p90": 5094.56,
+      "p95": 5097.27,
+      "p99": 5099.44,
+      "min": 5007.23,
+      "max": 5099.98
+     },
+     "latency_s": {
+      "avg": 16.301,
+      "p25": 12.304,
+      "p50": 17.918,
+      "p75": 21.916,
+      "p90": 22.372,
+      "p95": 22.525,
+      "p99": 22.647,
+      "min": 6.693,
+      "max": 22.677
+     },
+     "itl_ms": {
+      "avg": 149.54,
+      "p25": 149.31,
+      "p50": 149.6,
+      "p75": 149.84,
+      "p90": 150.1,
+      "p95": 150.19,
+      "p99": 150.26,
+      "min": 148.7,
+      "max": 150.28
+     },
+     "prefill_tps": {
+      "avg": 50.32,
+      "p25": 50.13,
+      "p50": 50.18,
+      "p75": 50.37,
+      "p90": 50.7,
+      "p95": 50.82,
+      "p99": 50.91,
+      "min": 50.0,
+      "max": 50.93
+     },
+     "decode_tps": {
+      "avg": 6.54,
+      "p25": 6.52,
+      "p50": 6.64,
+      "p75": 6.65,
+      "p90": 6.66,
+      "p95": 6.66,
+      "p99": 6.66,
+      "min": 6.2,
+      "max": 6.66
+     },
+     "output_tokens_per_request": {
+      "avg": 75.5,
+      "min": 11,
+      "max": 118
+     },
+     "throughput_per_request_tps": {
+      "avg": 4.08,
+      "p25": 3.69,
+      "p50": 4.75,
+      "p75": 5.14,
+      "p90": 5.18,
+      "p95": 5.19,
+      "p99": 5.2,
+      "min": 1.64,
+      "max": 5.2
+     },
+     "rps": 0.091,
+     "aggregate_input_tps": 23.32,
+     "aggregate_throughput_tps": 6.9,
+     "total_input_tokens": 1020,
+     "total_output_tokens": 302,
+     "wall_clock_s": 43.746,
+     "slo": null
+    }
+   },
+   {
+    "name": "4并发·长入短出",
+    "config": {
+     "name": "4并发·长入短出",
+     "concurrency": 4,
+     "total_requests": 8,
+     "input_tokens": 2048,
+     "max_output_tokens": 256,
+     "lang": "zh",
+     "cache_mode": "auto",
+     "warmup_requests": 0
+    },
+    "summary": {
+     "success_count": 8,
+     "failed_count": 0,
+     "error_rate": 0.0,
+     "error_groups": {},
+     "error_buckets": {},
+     "warmup_count": 0,
+     "ttft_ms": {
+      "avg": 2579.73,
+      "p25": 2012.11,
+      "p50": 2753.94,
+      "p75": 3378.22,
+      "p90": 3399.85,
+      "p95": 3409.62,
+      "p99": 3417.44,
+      "min": 1325.97,
+      "max": 3419.39
+     },
+     "latency_s": {
+      "avg": 15.904,
+      "p25": 13.977,
+      "p50": 15.391,
+      "p75": 18.426,
+      "p90": 19.331,
+      "p95": 19.455,
+      "p99": 19.555,
+      "min": 12.446,
+      "max": 19.58
+     },
+     "itl_ms": {
+      "avg": 151.44,
+      "p25": 150.98,
+      "p50": 151.22,
+      "p75": 151.88,
+      "p90": 152.84,
+      "p95": 152.85,
+      "p99": 152.87,
+      "min": 150.03,
+      "max": 152.87
+     },
+     "prefill_tps": {
+      "avg": 909.35,
+      "p25": 605.94,
+      "p50": 770.31,
+      "p75": 1057.54,
+      "p90": 1483.11,
+      "p95": 1513.45,
+      "p99": 1537.71,
+      "min": 598.64,
+      "max": 1543.78
+     },
+     "decode_tps": {
+      "avg": 6.53,
+      "p25": 6.48,
+      "p50": 6.54,
+      "p75": 6.59,
+      "p90": 6.61,
+      "p95": 6.62,
+      "p99": 6.63,
+      "min": 6.39,
+      "max": 6.63
+     },
+     "output_tokens_per_request": {
+      "avg": 88.1,
+      "min": 59,
+      "max": 121
+     },
+     "throughput_per_request_tps": {
+      "avg": 5.48,
+      "p25": 5.06,
+      "p50": 5.48,
+      "p75": 5.93,
+      "p90": 6.11,
+      "p95": 6.14,
+      "p99": 6.17,
+      "min": 4.74,
+      "max": 6.18
+     },
+     "rps": 0.233,
+     "aggregate_input_tps": 475.95,
+     "aggregate_throughput_tps": 20.49,
+     "total_input_tokens": 16376,
+     "total_output_tokens": 705,
+     "wall_clock_s": 34.407,
+     "slo": null
+    }
+   },
+   {
+    "name": "4并发·短入长出",
+    "config": {
+     "name": "4并发·短入长出",
+     "concurrency": 4,
+     "total_requests": 8,
+     "input_tokens": 256,
+     "max_output_tokens": 2048,
+     "lang": "zh",
+     "cache_mode": "auto",
+     "warmup_requests": 0
+    },
+    "summary": {
+     "success_count": 8,
+     "failed_count": 0,
+     "error_rate": 0.0,
+     "error_groups": {},
+     "error_buckets": {},
+     "warmup_count": 0,
+     "ttft_ms": {
+      "avg": 2338.61,
+      "p25": 1356.25,
+      "p50": 2383.06,
+      "p75": 3375.7,
+      "p90": 3387.43,
+      "p95": 3387.61,
+      "p99": 3387.76,
+      "min": 1163.03,
+      "max": 3387.8
+     },
+     "latency_s": {
+      "avg": 22.039,
+      "p25": 15.209,
+      "p50": 18.071,
+      "p75": 25.569,
+      "p90": 39.847,
+      "p95": 46.466,
+      "p99": 51.762,
+      "min": 4.272,
+      "max": 53.086
+     },
+     "itl_ms": {
+      "avg": 149.99,
+      "p25": 150.05,
+      "p50": 151.19,
+      "p75": 151.99,
+      "p90": 152.52,
+      "p95": 152.56,
+      "p99": 152.59,
+      "min": 140.54,
+      "max": 152.6
+     },
+     "prefill_tps": {
+      "avg": 136.38,
+      "p25": 75.54,
+      "p50": 128.35,
+      "p75": 188.54,
+      "p90": 210.12,
+      "p95": 214.69,
+      "p99": 218.35,
+      "min": 75.27,
+      "max": 219.26
+     },
+     "decode_tps": {
+      "avg": 6.26,
+      "p25": 6.44,
+      "p50": 6.55,
+      "p75": 6.58,
+      "p90": 6.61,
+      "p95": 6.61,
+      "p99": 6.62,
+      "min": 4.44,
+      "max": 6.62
+     },
+     "output_tokens_per_request": {
+      "avg": 130.0,
+      "min": 5,
+      "max": 329
+     },
+     "throughput_per_request_tps": {
+      "avg": 5.29,
+      "p25": 5.32,
+      "p50": 5.88,
+      "p75": 6.2,
+      "p90": 6.25,
+      "p95": 6.3,
+      "p99": 6.34,
+      "min": 1.17,
+      "max": 6.35
+     },
+     "rps": 0.151,
+     "aggregate_input_tps": 38.43,
+     "aggregate_throughput_tps": 19.59,
+     "total_input_tokens": 2040,
+     "total_output_tokens": 1040,
+     "wall_clock_s": 53.089,
+     "slo": null
+    }
+   },
+   {
+    "name": "4并发·长入长出",
+    "config": {
+     "name": "4并发·长入长出",
+     "concurrency": 4,
+     "total_requests": 8,
+     "input_tokens": 2048,
+     "max_output_tokens": 2048,
+     "lang": "zh",
+     "cache_mode": "auto",
+     "warmup_requests": 0
+    },
+    "summary": {
+     "success_count": 8,
+     "failed_count": 0,
+     "error_rate": 0.0,
+     "error_groups": {},
+     "error_buckets": {},
+     "warmup_count": 0,
+     "ttft_ms": {
+      "avg": 2764.66,
+      "p25": 2239.19,
+      "p50": 2297.35,
+      "p75": 3397.46,
+      "p90": 3796.35,
+      "p95": 4028.57,
+      "p99": 4214.35,
+      "min": 1957.36,
+      "max": 4260.79
+     },
+     "latency_s": {
+      "avg": 40.229,
+      "p25": 30.165,
+      "p50": 38.99,
+      "p75": 51.725,
+      "p90": 57.171,
+      "p95": 63.523,
+      "p99": 68.604,
+      "min": 10.921,
+      "max": 69.874
+     },
+     "itl_ms": {
+      "avg": 151.74,
+      "p25": 142.61,
+      "p50": 153.45,
+      "p75": 155.18,
+      "p90": 159.9,
+      "p95": 164.52,
+      "p99": 168.21,
+      "min": 141.92,
+      "max": 169.13
+     },
+     "prefill_tps": {
+      "avg": 795.87,
+      "p25": 603.18,
+      "p50": 891.03,
+      "p75": 915.67,
+      "p90": 1000.63,
+      "p95": 1023.21,
+      "p99": 1041.28,
+      "min": 480.43,
+      "max": 1045.8
+     },
+     "decode_tps": {
+      "avg": 6.6,
+      "p25": 6.44,
+      "p50": 6.5,
+      "p75": 7.0,
+      "p90": 7.02,
+      "p95": 7.03,
+      "p99": 7.03,
+      "min": 5.91,
+      "max": 7.03
+     },
+     "output_tokens_per_request": {
+      "avg": 248.9,
+      "min": 54,
+      "max": 441
+     },
+     "throughput_per_request_tps": {
+      "avg": 6.07,
+      "p25": 6.16,
+      "p50": 6.18,
+      "p75": 6.29,
+      "p90": 6.31,
+      "p95": 6.32,
+      "p99": 6.32,
+      "min": 4.94,
+      "max": 6.32
+     },
+     "rps": 0.087,
+     "aggregate_input_tps": 177.53,
+     "aggregate_throughput_tps": 21.58,
+     "total_input_tokens": 16376,
+     "total_output_tokens": 1991,
+     "wall_clock_s": 92.241,
+     "slo": null
+    }
+   },
+   {
+    "name": "16并发·短入短出",
+    "config": {
+     "name": "16并发·短入短出",
+     "concurrency": 16,
+     "total_requests": 16,
+     "input_tokens": 256,
+     "max_output_tokens": 256,
+     "lang": "zh",
+     "cache_mode": "auto",
+     "warmup_requests": 0
+    },
+    "summary": {
+     "success_count": 16,
+     "failed_count": 0,
+     "error_rate": 0.0,
+     "error_groups": {},
+     "error_buckets": {},
+     "warmup_count": 0,
+     "ttft_ms": {
+      "avg": 5154.28,
+      "p25": 5069.25,
+      "p50": 5211.65,
+      "p75": 5214.38,
+      "p90": 5234.46,
+      "p95": 5250.81,
+      "p99": 5251.37,
+      "min": 4972.37,
+      "max": 5251.51
+     },
+     "latency_s": {
+      "avg": 23.511,
+      "p25": 23.042,
+      "p50": 25.191,
+      "p75": 26.088,
+      "p90": 27.042,
+      "p95": 27.807,
+      "p99": 29.145,
+      "min": 10.096,
+      "max": 29.48
+     },
+     "itl_ms": {
+      "avg": 192.65,
+      "p25": 176.66,
+      "p50": 178.87,
+      "p75": 181.84,
+      "p90": 201.88,
+      "p95": 242.93,
+      "p99": 338.1,
+      "min": 172.66,
+      "max": 361.89
+     },
+     "prefill_tps": {
+      "avg": 49.49,
+      "p25": 48.9,
+      "p50": 48.93,
+      "p75": 50.3,
+      "p90": 50.72,
+      "p95": 51.16,
+      "p99": 51.26,
+      "min": 48.56,
+      "max": 51.28
+     },
+     "decode_tps": {
+      "avg": 5.31,
+      "p25": 5.46,
+      "p50": 5.54,
+      "p75": 5.64,
+      "p90": 5.66,
+      "p95": 5.69,
+      "p99": 5.76,
+      "min": 2.6,
+      "max": 5.78
+     },
+     "output_tokens_per_request": {
+      "avg": 101.6,
+      "min": 14,
+      "max": 142
+     },
+     "throughput_per_request_tps": {
+      "avg": 4.17,
+      "p25": 4.28,
+      "p50": 4.42,
+      "p75": 4.58,
+      "p90": 4.63,
+      "p95": 4.7,
+      "p99": 4.8,
+      "min": 1.39,
+      "max": 4.82
+     },
+     "rps": 0.543,
+     "aggregate_input_tps": 138.39,
+     "aggregate_throughput_tps": 55.12,
+     "total_input_tokens": 4080,
+     "total_output_tokens": 1625,
+     "wall_clock_s": 29.482,
+     "slo": null
+    }
+   },
+   {
+    "name": "16并发·长入短出",
+    "config": {
+     "name": "16并发·长入短出",
+     "concurrency": 16,
+     "total_requests": 16,
+     "input_tokens": 2048,
+     "max_output_tokens": 256,
+     "lang": "zh",
+     "cache_mode": "auto",
+     "warmup_requests": 0
+    },
+    "summary": {
+     "success_count": 16,
+     "failed_count": 0,
+     "error_rate": 0.0,
+     "error_groups": {},
+     "error_buckets": {},
+     "warmup_count": 0,
+     "ttft_ms": {
+      "avg": 5420.29,
+      "p25": 4179.99,
+      "p50": 5978.55,
+      "p75": 6187.7,
+      "p90": 6190.13,
+      "p95": 6193.35,
+      "p99": 6200.3,
+      "min": 3824.04,
+      "max": 6202.04
+     },
+     "latency_s": {
+      "avg": 23.432,
+      "p25": 21.319,
+      "p50": 22.709,
+      "p75": 26.739,
+      "p90": 28.327,
+      "p95": 28.864,
+      "p99": 28.91,
+      "min": 14.849,
+      "max": 28.922
+     },
+     "itl_ms": {
+      "avg": 193.73,
+      "p25": 181.65,
+      "p50": 187.12,
+      "p75": 202.35,
+      "p90": 204.98,
+      "p95": 216.05,
+      "p99": 242.39,
+      "min": 180.04,
+      "max": 248.97
+     },
+     "prefill_tps": {
+      "avg": 392.89,
+      "p25": 330.81,
+      "p50": 342.74,
+      "p75": 490.16,
+      "p90": 522.23,
+      "p95": 530.11,
+      "p99": 534.26,
+      "min": 330.05,
+      "max": 535.3
+     },
+     "decode_tps": {
+      "avg": 5.17,
+      "p25": 4.91,
+      "p50": 5.33,
+      "p75": 5.47,
+      "p90": 5.52,
+      "p95": 5.52,
+      "p99": 5.54,
+      "min": 3.99,
+      "max": 5.54
+     },
+     "output_tokens_per_request": {
+      "avg": 94.8,
+      "min": 45,
+      "max": 127
+     },
+     "throughput_per_request_tps": {
+      "avg": 3.99,
+      "p25": 3.94,
+      "p50": 4.05,
+      "p75": 4.21,
+      "p90": 4.33,
+      "p95": 4.38,
+      "p99": 4.39,
+      "min": 3.03,
+      "max": 4.39
+     },
+     "rps": 0.553,
+     "aggregate_input_tps": 1132.15,
+     "aggregate_throughput_tps": 52.44,
+     "total_input_tokens": 32752,
+     "total_output_tokens": 1517,
+     "wall_clock_s": 28.929,
+     "slo": null
+    }
+   },
+   {
+    "name": "16并发·短入长出",
+    "config": {
+     "name": "16并发·短入长出",
+     "concurrency": 16,
+     "total_requests": 16,
+     "input_tokens": 256,
+     "max_output_tokens": 2048,
+     "lang": "zh",
+     "cache_mode": "auto",
+     "warmup_requests": 0
+    },
+    "summary": {
+     "success_count": 16,
+     "failed_count": 0,
+     "error_rate": 0.0,
+     "error_groups": {},
+     "error_buckets": {},
+     "warmup_count": 0,
+     "ttft_ms": {
+      "avg": 5170.17,
+      "p25": 5096.6,
+      "p50": 5183.66,
+      "p75": 5213.36,
+      "p90": 5299.73,
+      "p95": 5362.23,
+      "p99": 5372.57,
+      "min": 4880.89,
+      "max": 5375.16
+     },
+     "latency_s": {
+      "avg": 35.05,
+      "p25": 20.166,
+      "p50": 29.678,
+      "p75": 41.868,
+      "p90": 60.69,
+      "p95": 71.793,
+      "p99": 86.094,
+      "min": 10.882,
+      "max": 89.669
+     },
+     "itl_ms": {
+      "avg": 156.08,
+      "p25": 154.84,
+      "p50": 156.79,
+      "p75": 157.59,
+      "p90": 158.44,
+      "p95": 159.33,
+      "p99": 161.35,
+      "min": 148.8,
+      "max": 161.85
+     },
+     "prefill_tps": {
+      "avg": 49.34,
+      "p25": 48.91,
+      "p50": 49.2,
+      "p75": 50.04,
+      "p90": 50.27,
+      "p95": 50.83,
+      "p99": 51.96,
+      "min": 47.44,
+      "max": 52.24
+     },
+     "decode_tps": {
+      "avg": 6.35,
+      "p25": 6.25,
+      "p50": 6.36,
+      "p75": 6.41,
+      "p90": 6.54,
+      "p95": 6.61,
+      "p99": 6.69,
+      "min": 6.13,
+      "max": 6.71
+     },
+     "output_tokens_per_request": {
+      "avg": 193.6,
+      "min": 38,
+      "max": 570
+     },
+     "throughput_per_request_tps": {
+      "avg": 5.14,
+      "p25": 4.65,
+      "p50": 5.27,
+      "p75": 5.61,
+      "p90": 6.0,
+      "p95": 6.15,
+      "p99": 6.32,
+      "min": 3.49,
+      "max": 6.36
+     },
+     "rps": 0.178,
+     "aggregate_input_tps": 45.5,
+     "aggregate_throughput_tps": 34.54,
+     "total_input_tokens": 4080,
+     "total_output_tokens": 3097,
+     "wall_clock_s": 89.67,
+     "slo": null
+    }
+   },
+   {
+    "name": "16并发·长入长出",
+    "config": {
+     "name": "16并发·长入长出",
+     "concurrency": 16,
+     "total_requests": 16,
+     "input_tokens": 2048,
+     "max_output_tokens": 2048,
+     "lang": "zh",
+     "cache_mode": "auto",
+     "warmup_requests": 0
+    },
+    "summary": {
+     "success_count": 16,
+     "failed_count": 0,
+     "error_rate": 0.0,
+     "error_groups": {},
+     "error_buckets": {},
+     "warmup_count": 0,
+     "ttft_ms": {
+      "avg": 3560.61,
+      "p25": 3382.91,
+      "p50": 3637.75,
+      "p75": 3727.55,
+      "p90": 3756.3,
+      "p95": 3762.45,
+      "p99": 3773.7,
+      "min": 3114.64,
+      "max": 3776.51
+     },
+     "latency_s": {
+      "avg": 37.664,
+      "p25": 20.115,
+      "p50": 40.569,
+      "p75": 48.943,
+      "p90": 63.349,
+      "p95": 70.735,
+      "p99": 72.437,
+      "min": 12.649,
+      "max": 72.862
+     },
+     "itl_ms": {
+      "avg": 150.86,
+      "p25": 150.86,
+      "p50": 151.05,
+      "p75": 151.42,
+      "p90": 151.59,
+      "p95": 151.67,
+      "p99": 151.77,
+      "min": 149.12,
+      "max": 151.8
+     },
+     "prefill_tps": {
+      "avg": 576.9,
+      "p25": 549.15,
+      "p50": 562.71,
+      "p75": 605.14,
+      "p90": 617.86,
+      "p95": 628.84,
+      "p99": 651.54,
+      "min": 542.03,
+      "max": 657.22
+     },
+     "decode_tps": {
+      "avg": 6.6,
+      "p25": 6.57,
+      "p50": 6.59,
+      "p75": 6.61,
+      "p90": 6.67,
+      "p95": 6.68,
+      "p99": 6.7,
+      "min": 6.51,
+      "max": 6.7
+     },
+     "output_tokens_per_request": {
+      "avg": 226.5,
+      "min": 63,
+      "max": 464
+     },
+     "throughput_per_request_tps": {
+      "avg": 5.81,
+      "p25": 5.51,
+      "p50": 6.01,
+      "p75": 6.13,
+      "p90": 6.29,
+      "p95": 6.37,
+      "p99": 6.38,
+      "min": 4.98,
+      "max": 6.38
+     },
+     "rps": 0.22,
+     "aggregate_input_tps": 449.45,
+     "aggregate_throughput_tps": 49.73,
+     "total_input_tokens": 32752,
+     "total_output_tokens": 3624,
+     "wall_clock_s": 72.871,
+     "slo": null
+    }
+   },
+   {
+    "name": "32并发·短入短出",
+    "config": {
+     "name": "32并发·短入短出",
+     "concurrency": 32,
+     "total_requests": 24,
+     "input_tokens": 256,
+     "max_output_tokens": 256,
+     "lang": "zh",
+     "cache_mode": "auto",
+     "warmup_requests": 0
+    },
+    "summary": {
+     "success_count": 24,
+     "failed_count": 0,
+     "error_rate": 0.0,
+     "error_groups": {},
+     "error_buckets": {},
+     "warmup_count": 0,
+     "ttft_ms": {
+      "avg": 9246.17,
+      "p25": 8805.66,
+      "p50": 8813.03,
+      "p75": 10474.48,
+      "p90": 10476.15,
+      "p95": 10477.5,
+      "p99": 10486.13,
+      "min": 8180.48,
+      "max": 10488.64
+     },
+     "latency_s": {
+      "avg": 29.65,
+      "p25": 28.565,
+      "p50": 30.747,
+      "p75": 32.562,
+      "p90": 33.548,
+      "p95": 34.068,
+      "p99": 34.89,
+      "min": 12.7,
+      "max": 35.12
+     },
+     "itl_ms": {
+      "avg": 218.17,
+      "p25": 191.04,
+      "p50": 194.68,
+      "p75": 201.17,
+      "p90": 209.92,
+      "p95": 210.17,
+      "p99": 622.61,
+      "min": 176.7,
+      "max": 745.8
+     },
+     "prefill_tps": {
+      "avg": 27.78,
+      "p25": 24.35,
+      "p50": 28.94,
+      "p75": 28.96,
+      "p90": 29.88,
+      "p95": 30.03,
+      "p99": 30.91,
+      "min": 24.31,
+      "max": 31.17
+     },
+     "decode_tps": {
+      "avg": 4.95,
+      "p25": 4.95,
+      "p50": 5.12,
+      "p75": 5.21,
+      "p90": 5.39,
+      "p95": 5.48,
+      "p99": 5.61,
+      "min": 1.32,
+      "max": 5.64
+     },
+     "output_tokens_per_request": {
+      "avg": 105.0,
+      "min": 6,
+      "max": 140
+     },
+     "throughput_per_request_tps": {
+      "avg": 3.43,
+      "p25": 3.3,
+      "p50": 3.61,
+      "p75": 3.8,
+      "p90": 3.86,
+      "p95": 3.97,
+      "p99": 4.05,
+      "min": 0.47,
+      "max": 4.07
+     },
+     "rps": 0.683,
+     "aggregate_input_tps": 174.19,
+     "aggregate_throughput_tps": 71.73,
+     "total_input_tokens": 6120,
+     "total_output_tokens": 2520,
+     "wall_clock_s": 35.133,
+     "slo": null
+    }
+   },
+   {
+    "name": "32并发·长入短出",
+    "config": {
+     "name": "32并发·长入短出",
+     "concurrency": 32,
+     "total_requests": 24,
+     "input_tokens": 2048,
+     "max_output_tokens": 256,
+     "lang": "zh",
+     "cache_mode": "auto",
+     "warmup_requests": 0
+    },
+    "summary": {
+     "success_count": 24,
+     "failed_count": 0,
+     "error_rate": 0.0,
+     "error_groups": {},
+     "error_buckets": {},
+     "warmup_count": 0,
+     "ttft_ms": {
+      "avg": 7170.86,
+      "p25": 7114.14,
+      "p50": 7205.26,
+      "p75": 7251.39,
+      "p90": 7322.39,
+      "p95": 7323.22,
+      "p99": 7346.98,
+      "min": 6428.82,
+      "max": 7354.04
+     },
+     "latency_s": {
+      "avg": 24.374,
+      "p25": 22.968,
+      "p50": 24.37,
+      "p75": 26.784,
+      "p90": 28.119,
+      "p95": 28.964,
+      "p99": 29.193,
+      "min": 18.55,
+      "max": 29.217
+     },
+     "itl_ms": {
+      "avg": 181.97,
+      "p25": 174.77,
+      "p50": 181.4,
+      "p75": 183.23,
+      "p90": 195.04,
+      "p95": 197.23,
+      "p99": 202.63,
+      "min": 172.15,
+      "max": 204.15
+     },
+     "prefill_tps": {
+      "avg": 285.65,
+      "p25": 282.29,
+      "p50": 284.1,
+      "p75": 287.74,
+      "p90": 288.36,
+      "p95": 288.49,
+      "p99": 311.53,
+      "min": 278.35,
+      "max": 318.41
+     },
+     "decode_tps": {
+      "avg": 5.48,
+      "p25": 5.42,
+      "p50": 5.49,
+      "p75": 5.68,
+      "p90": 5.75,
+      "p95": 5.75,
+      "p99": 5.8,
+      "min": 4.9,
+      "max": 5.81
+     },
+     "output_tokens_per_request": {
+      "avg": 96.0,
+      "min": 56,
+      "max": 128
+     },
+     "throughput_per_request_tps": {
+      "avg": 3.9,
+      "p25": 3.81,
+      "p50": 3.9,
+      "p75": 4.18,
+      "p90": 4.31,
+      "p95": 4.33,
+      "p99": 4.37,
+      "min": 3.02,
+      "max": 4.38
+     },
+     "rps": 0.821,
+     "aggregate_input_tps": 1681.36,
+     "aggregate_throughput_tps": 78.85,
+     "total_input_tokens": 49128,
+     "total_output_tokens": 2304,
+     "wall_clock_s": 29.219,
+     "slo": null
+    }
+   },
+   {
+    "name": "32并发·短入长出",
+    "config": {
+     "name": "32并发·短入长出",
+     "concurrency": 32,
+     "total_requests": 24,
+     "input_tokens": 256,
+     "max_output_tokens": 2048,
+     "lang": "zh",
+     "cache_mode": "auto",
+     "warmup_requests": 0
+    },
+    "summary": {
+     "success_count": 24,
+     "failed_count": 0,
+     "error_rate": 0.0,
+     "error_groups": {},
+     "error_buckets": {},
+     "warmup_count": 0,
+     "ttft_ms": {
+      "avg": 8765.53,
+      "p25": 8589.32,
+      "p50": 8626.0,
+      "p75": 8667.7,
+      "p90": 9853.0,
+      "p95": 10346.98,
+      "p99": 10359.57,
+      "min": 7791.26,
+      "max": 10363.3
+     },
+     "latency_s": {
+      "avg": 36.259,
+      "p25": 22.942,
+      "p50": 32.963,
+      "p75": 45.785,
+      "p90": 56.735,
+      "p95": 62.213,
+      "p99": 99.756,
+      "min": 12.41,
+      "max": 110.761
+     },
+     "itl_ms": {
+      "avg": 184.54,
+      "p25": 157.73,
+      "p50": 164.08,
+      "p75": 178.0,
+      "p90": 203.39,
+      "p95": 216.72,
+      "p99": 443.89,
+      "min": 143.86,
+      "max": 511.05
+     },
+     "prefill_tps": {
+      "avg": 29.23,
+      "p25": 29.42,
+      "p50": 29.56,
+      "p75": 29.69,
+      "p90": 30.92,
+      "p95": 31.04,
+      "p99": 32.35,
+      "min": 24.61,
+      "max": 32.73
+     },
+     "decode_tps": {
+      "avg": 5.73,
+      "p25": 5.57,
+      "p50": 6.03,
+      "p75": 6.33,
+      "p90": 6.48,
+      "p95": 6.73,
+      "p99": 6.9,
+      "min": 1.84,
+      "max": 6.94
+     },
+     "output_tokens_per_request": {
+      "avg": 172.1,
+      "min": 8,
+      "max": 710
+     },
+     "throughput_per_request_tps": {
+      "avg": 4.14,
+      "p25": 3.4,
+      "p50": 4.46,
+      "p75": 5.12,
+      "p90": 5.49,
+      "p95": 5.65,
+      "p99": 6.24,
+      "min": 0.64,
+      "max": 6.41
+     },
+     "rps": 0.217,
+     "aggregate_input_tps": 55.25,
+     "aggregate_throughput_tps": 37.29,
+     "total_input_tokens": 6120,
+     "total_output_tokens": 4130,
+     "wall_clock_s": 110.763,
+     "slo": null
+    }
+   },
+   {
+    "name": "32并发·长入长出",
+    "config": {
+     "name": "32并发·长入长出",
+     "concurrency": 32,
+     "total_requests": 24,
+     "input_tokens": 2048,
+     "max_output_tokens": 2048,
+     "lang": "zh",
+     "cache_mode": "auto",
+     "warmup_requests": 0
+    },
+    "summary": {
+     "success_count": 24,
+     "failed_count": 0,
+     "error_rate": 0.0,
+     "error_groups": {},
+     "error_buckets": {},
+     "warmup_count": 0,
+     "ttft_ms": {
+      "avg": 5373.94,
+      "p25": 5351.95,
+      "p50": 5375.78,
+      "p75": 5459.78,
+      "p90": 5527.12,
+      "p95": 5527.63,
+      "p99": 5539.84,
+      "min": 4752.36,
+      "max": 5543.47
+     },
+     "latency_s": {
+      "avg": 45.394,
+      "p25": 25.612,
+      "p50": 43.948,
+      "p75": 58.663,
+      "p90": 68.169,
+      "p95": 70.384,
+      "p99": 92.42,
+      "min": 19.383,
+      "max": 98.956
+     },
+     "itl_ms": {
+      "avg": 165.07,
+      "p25": 158.24,
+      "p50": 163.0,
+      "p75": 174.55,
+      "p90": 177.19,
+      "p95": 181.57,
+      "p99": 184.38,
+      "min": 146.95,
+      "max": 185.01
+     },
+     "prefill_tps": {
+      "avg": 381.29,
+      "p25": 374.93,
+      "p50": 380.78,
+      "p75": 382.48,
+      "p90": 391.12,
+      "p95": 398.69,
+      "p99": 423.52,
+      "min": 369.26,
+      "max": 430.73
+     },
+     "decode_tps": {
+      "avg": 6.05,
+      "p25": 5.7,
+      "p50": 6.09,
+      "p75": 6.3,
+      "p90": 6.42,
+      "p95": 6.45,
+      "p99": 6.7,
+      "min": 5.38,
+      "max": 6.78
+     },
+     "output_tokens_per_request": {
+      "avg": 249.8,
+      "min": 76,
+      "max": 640
+     },
+     "throughput_per_request_tps": {
+      "avg": 5.23,
+      "p25": 4.52,
+      "p50": 5.36,
+      "p75": 5.74,
+      "p90": 5.94,
+      "p95": 5.97,
+      "p99": 6.35,
+      "min": 3.92,
+      "max": 6.47
+     },
+     "rps": 0.243,
+     "aggregate_input_tps": 496.45,
+     "aggregate_throughput_tps": 60.59,
+     "total_input_tokens": 49128,
+     "total_output_tokens": 5996,
+     "wall_clock_s": 98.958,
+     "slo": null
+    }
+   },
+   {
+    "name": "64并发·短入短出",
+    "config": {
+     "name": "64并发·短入短出",
+     "concurrency": 64,
+     "total_requests": 32,
+     "input_tokens": 256,
+     "max_output_tokens": 256,
+     "lang": "zh",
+     "cache_mode": "auto",
+     "warmup_requests": 0
+    },
+    "summary": {
+     "success_count": 32,
+     "failed_count": 0,
+     "error_rate": 0.0,
+     "error_groups": {},
+     "error_buckets": {},
+     "warmup_count": 0,
+     "ttft_ms": {
+      "avg": 3751.31,
+      "p25": 3683.41,
+      "p50": 3692.43,
+      "p75": 3867.03,
+      "p90": 3878.1,
+      "p95": 3886.88,
+      "p99": 5060.61,
+      "min": 2749.76,
+      "max": 5585.7
+     },
+     "latency_s": {
+      "avg": 20.805,
+      "p25": 19.367,
+      "p50": 20.692,
+      "p75": 23.957,
+      "p90": 25.629,
+      "p95": 27.593,
+      "p99": 29.712,
+      "min": 7.992,
+      "max": 29.949
+     },
+     "itl_ms": {
+      "avg": 189.28,
+      "p25": 172.73,
+      "p50": 179.01,
+      "p75": 183.04,
+      "p90": 197.16,
+      "p95": 225.61,
+      "p99": 389.11,
+      "min": 154.76,
+      "max": 449.04
+     },
+     "prefill_tps": {
+      "avg": 68.6,
+      "p25": 65.94,
+      "p50": 69.06,
+      "p75": 69.23,
+      "p90": 69.44,
+      "p95": 75.28,
+      "p99": 87.62,
+      "min": 45.65,
+      "max": 92.74
+     },
+     "decode_tps": {
+      "avg": 5.42,
+      "p25": 5.43,
+      "p50": 5.54,
+      "p75": 5.75,
+      "p90": 5.88,
+      "p95": 5.96,
+      "p99": 6.32,
+      "min": 2.16,
+      "max": 6.44
+     },
+     "output_tokens_per_request": {
+      "avg": 96.3,
+      "min": 10,
+      "max": 159
+     },
+     "throughput_per_request_tps": {
+      "avg": 4.48,
+      "p25": 4.45,
+      "p50": 4.65,
+      "p75": 4.86,
+      "p90": 5.1,
+      "p95": 5.17,
+      "p99": 5.29,
+      "min": 1.25,
+      "max": 5.31
+     },
+     "rps": 1.068,
+     "aggregate_input_tps": 272.4,
+     "aggregate_throughput_tps": 102.92,
+     "total_input_tokens": 8160,
+     "total_output_tokens": 3083,
+     "wall_clock_s": 29.956,
+     "slo": null
+    }
+   },
+   {
+    "name": "64并发·长入短出",
+    "config": {
+     "name": "64并发·长入短出",
+     "concurrency": 64,
+     "total_requests": 32,
+     "input_tokens": 2048,
+     "max_output_tokens": 256,
+     "lang": "zh",
+     "cache_mode": "auto",
+     "warmup_requests": 0
+    },
+    "summary": {
+     "success_count": 32,
+     "failed_count": 0,
+     "error_rate": 0.0,
+     "error_groups": {},
+     "error_buckets": {},
+     "warmup_count": 0,
+     "ttft_ms": {
+      "avg": 6122.53,
+      "p25": 6044.41,
+      "p50": 6161.76,
+      "p75": 6223.9,
+      "p90": 6272.1,
+      "p95": 6291.36,
+      "p99": 6306.35,
+      "min": 5416.27,
+      "max": 6307.68
+     },
+     "latency_s": {
+      "avg": 20.25,
+      "p25": 19.274,
+      "p50": 21.369,
+      "p75": 22.578,
+      "p90": 24.709,
+      "p95": 25.12,
+      "p99": 25.258,
+      "min": 6.838,
+      "max": 25.282
+     },
+     "itl_ms": {
+      "avg": 151.53,
+      "p25": 151.67,
+      "p50": 153.12,
+      "p75": 153.62,
+      "p90": 154.07,
+      "p95": 154.25,
+      "p99": 154.49,
+      "min": 124.06,
+      "max": 154.51
+     },
+     "prefill_tps": {
+      "avg": 334.58,
+      "p25": 328.89,
+      "p50": 332.21,
+      "p75": 338.66,
+      "p90": 339.34,
+      "p95": 339.77,
+      "p99": 366.25,
+      "min": 324.53,
+      "max": 377.94
+     },
+     "decode_tps": {
+      "avg": 6.52,
+      "p25": 6.46,
+      "p50": 6.49,
+      "p75": 6.56,
+      "p90": 6.6,
+      "p95": 6.75,
+      "p99": 7.01,
+      "min": 6.38,
+      "max": 7.06
+     },
+     "output_tokens_per_request": {
+      "avg": 93.0,
+      "min": 5,
+      "max": 128
+     },
+     "throughput_per_request_tps": {
+      "avg": 4.42,
+      "p25": 4.47,
+      "p50": 4.67,
+      "p75": 4.83,
+      "p90": 4.99,
+      "p95": 5.05,
+      "p99": 5.2,
+      "min": 0.73,
+      "max": 5.26
+     },
+     "rps": 1.263,
+     "aggregate_input_tps": 2585.67,
+     "aggregate_throughput_tps": 117.51,
+     "total_input_tokens": 65504,
+     "total_output_tokens": 2977,
+     "wall_clock_s": 25.333,
+     "slo": null
+    }
+   },
+   {
+    "name": "64并发·短入长出",
+    "config": {
+     "name": "64并发·短入长出",
+     "concurrency": 64,
+     "total_requests": 32,
+     "input_tokens": 256,
+     "max_output_tokens": 2048,
+     "lang": "zh",
+     "cache_mode": "auto",
+     "warmup_requests": 0
+    },
+    "summary": {
+     "success_count": 32,
+     "failed_count": 0,
+     "error_rate": 0.0,
+     "error_groups": {},
+     "error_buckets": {},
+     "warmup_count": 0,
+     "ttft_ms": {
+      "avg": 3657.82,
+      "p25": 3680.65,
+      "p50": 3688.59,
+      "p75": 3739.55,
+      "p90": 3855.35,
+      "p95": 3863.06,
+      "p99": 3868.51,
+      "min": 2812.31,
+      "max": 3868.88
+     },
+     "latency_s": {
+      "avg": 31.293,
+      "p25": 18.825,
+      "p50": 31.791,
+      "p75": 42.617,
+      "p90": 50.188,
+      "p95": 52.313,
+      "p99": 55.931,
+      "min": 6.115,
+      "max": 57.55
+     },
+     "itl_ms": {
+      "avg": 148.46,
+      "p25": 147.67,
+      "p50": 148.91,
+      "p75": 149.88,
+      "p90": 150.68,
+      "p95": 150.93,
+      "p99": 153.7,
+      "min": 138.39,
+      "max": 154.87
+     },
+     "prefill_tps": {
+      "avg": 69.99,
+      "p25": 68.19,
+      "p50": 69.13,
+      "p75": 69.28,
+      "p90": 76.99,
+      "p95": 78.15,
+      "p99": 86.8,
+      "min": 65.91,
+      "max": 90.67
+     },
+     "decode_tps": {
+      "avg": 6.67,
+      "p25": 6.6,
+      "p50": 6.65,
+      "p75": 6.74,
+      "p90": 6.82,
+      "p95": 6.83,
+      "p99": 6.86,
+      "min": 6.46,
+      "max": 6.87
+     },
+     "output_tokens_per_request": {
+      "avg": 186.4,
+      "min": 17,
+      "max": 371
+     },
+     "throughput_per_request_tps": {
+      "avg": 5.66,
+      "p25": 5.44,
+      "p50": 5.91,
+      "p75": 6.16,
+      "p90": 6.35,
+      "p95": 6.4,
+      "p99": 6.44,
+      "min": 2.78,
+      "max": 6.45
+     },
+     "rps": 0.556,
+     "aggregate_input_tps": 141.78,
+     "aggregate_throughput_tps": 103.64,
+     "total_input_tokens": 8160,
+     "total_output_tokens": 5965,
+     "wall_clock_s": 57.553,
+     "slo": null
+    }
+   },
+   {
+    "name": "64并发·长入长出",
+    "config": {
+     "name": "64并发·长入长出",
+     "concurrency": 64,
+     "total_requests": 32,
+     "input_tokens": 2048,
+     "max_output_tokens": 2048,
+     "lang": "zh",
+     "cache_mode": "auto",
+     "warmup_requests": 0
+    },
+    "summary": {
+     "success_count": 32,
+     "failed_count": 0,
+     "error_rate": 0.0,
+     "error_groups": {},
+     "error_buckets": {},
+     "warmup_count": 0,
+     "ttft_ms": {
+      "avg": 6781.26,
+      "p25": 6732.94,
+      "p50": 6820.29,
+      "p75": 6902.38,
+      "p90": 6914.73,
+      "p95": 6991.13,
+      "p99": 7032.31,
+      "min": 5996.37,
+      "max": 7032.76
+     },
+     "latency_s": {
+      "avg": 41.493,
+      "p25": 27.508,
+      "p50": 38.882,
+      "p75": 52.154,
+      "p90": 60.342,
+      "p95": 79.295,
+      "p99": 86.522,
+      "min": 12.51,
+      "max": 87.633
+     },
+     "itl_ms": {
+      "avg": 150.6,
+      "p25": 150.61,
+      "p50": 151.57,
+      "p75": 152.32,
+      "p90": 153.23,
+      "p95": 153.32,
+      "p99": 153.38,
+      "min": 136.19,
+      "max": 153.38
+     },
+     "prefill_tps": {
+      "avg": 302.14,
+      "p25": 296.57,
+      "p50": 300.17,
+      "p75": 304.03,
+      "p90": 314.54,
+      "p95": 316.5,
+      "p99": 333.96,
+      "min": 291.07,
+      "max": 341.37
+     },
+     "decode_tps": {
+      "avg": 6.6,
+      "p25": 6.53,
+      "p50": 6.57,
+      "p75": 6.62,
+      "p90": 6.78,
+      "p95": 6.83,
+      "p99": 7.15,
+      "min": 6.44,
+      "max": 7.28
+     },
+     "output_tokens_per_request": {
+      "avg": 231.2,
+      "min": 39,
+      "max": 555
+     },
+     "throughput_per_request_tps": {
+      "avg": 5.29,
+      "p25": 4.86,
+      "p50": 5.44,
+      "p75": 5.74,
+      "p90": 5.93,
+      "p95": 6.22,
+      "p99": 6.31,
+      "min": 3.12,
+      "max": 6.33
+     },
+     "rps": 0.365,
+     "aggregate_input_tps": 747.44,
+     "aggregate_throughput_tps": 84.43,
+     "total_input_tokens": 65504,
+     "total_output_tokens": 7399,
+     "wall_clock_s": 87.638,
+     "slo": null
+    }
+   }
+  ],
+  "analysis": [
+   [
+    "总体概况",
+    "共执行 16 个策略、320 个请求,成功 316、失败 4,整体成功率 98.75%。模型 /data/models/DeepSeek-V4-Pro-0813-W4AFP8-mt(OpenAI-compatible)。"
+   ],
+   [
+    "稳定性",
+    "「4并发·短入短出」错误率 50.0%(并发 4),超过 5% 阈值,高并发下服务出现明显失败,建议降低并发或检查服务日志/资源。该错误率下各延迟指标不具横向可比性(幸存者偏差)。"
+   ],
+   [
+    "错误构成",
+    "失败请求分布:连接异常 4 个。以连接异常为主 — 服务重启/崩溃或网络不稳。"
+   ],
+   [
+    "TTFT 扩展性",
+    "并发从 4 提升到 64(16.0 倍),TTFT P50 从 5081.64ms 增至 6820.29ms(1.34 倍)。有一定排队增长,属正常范围。"
+   ],
+   [
+    "吞吐扩展效率",
+    "聚合吞吐从 6.9 提升到 84.43 tokens/s,并发扩展效率约 76.5%(100% 为理想线性),扩展效率中等,继续加并发收益递减。"
+   ],
+   [
+    "长输入(Prefill)影响",
+    "短输入策略 TTFT P50 均值 5335.0ms,长输入策略 5028.8ms,为短输入的 0.94 倍。Prefill 成本随输入长度增长明显,长上下文场景建议关注 KV Cache 命中率与显存占用。"
+   ],
+   [
+    "解码(Decode)速度",
+    "短输出策略解码 P50 均值 5.8 tok/s,长输出策略 6.4 tok/s,差异 10.0%。解码速度在长/短输出场景下保持稳定。"
+   ],
+   [
+    "策略推荐",
+    "吞吐最优:「64并发·长入短出」聚合 117.51 tokens/s;延迟最优:「4并发·长入长出」TTFT P50 2297.35ms。高吞吐场景参考前者,交互式低延迟场景参考后者。"
+   ],
+   [
+    "综合结论",
+    "本次压测峰值聚合吞吐 117.51 tokens/s,整体成功率 98.75%。详细分位数据见「汇总」页,逐请求数据见各策略明细页。"
+   ]
+  ],
+  "ai_analysis": "### 一、总体结论oggle\n本次压测覆盖4/16/32/64并发、短入短出/长入短出/短入长出/长入长出四类场景。除4并发·短入短出出现50%连接失败外，其余场景成功率均为100%，整体稳定性尚可。但TTFT普遍偏高（多数场景在2~9秒），Decode阶段吞吐（5~7 tok/s/请求）明显受限，表明该类推理链路首包延迟与解码效率存在较大优化空间；聚合吞吐最高约117 tok/s（64并发·长入短出），随并发提升有一定扩展性，但存在排队效应与调度波峰。\n\n### 二、稳定性分析\n成功率方面，除“4并发·短入短出”场景出现50%失败外，其余并发级别下成功率均稳定在100%，因此稳定性转折点主要出现在最低并发下的短入短出场景，可能与连接建立异常或负载生成器瞬时压力造成有关。错误分桶显示该场景失败原因为连接问题（connection error），说明服务在低并发短请求下并没有表现出持续过载性失败，而是偶发或开局连接失败。除此之外，在16/32/64并发下，长入长出与短入长出场景均未出现失败，说明服务整体容错率和并发承载能力较好，但需要注意最小并发时短连接类场景的稳定性仍需进一步确认。\n\n### 三、延迟分析\nTTFT方面，短入短出在4并发下约5秒，16并发约5.2秒，32并发约9.2秒、64并发约3.75秒，随并发变化并不单调，表明首 token 延迟受请求调度的队列效应影响显著，尤其32并发下排队明显拉高。长入短出场景中，4并发TTFT约2.6秒，16并发5.4秒，32并发7.2秒，64并发6.1秒，显示长输入带来的prefill排队在中等并发最为严重；而长入长出场景在32并发时TTFT约5.4秒，64并发约6.8秒，排队效应仍在，但不呈单调增长。整体上TTFT对输入长度和并发均非常敏感。\n\n端到端延迟方面，短入短出从4并发16.3秒增至32并发30秒左右，显示长尾延迟明显放大；长入长出在4并发约40秒、16并发约38秒、64并发约41秒，基本稳定但均值偏高。ITL在低并发短出入短出场景下约150ms，16并发以上增加至160~220ms，64并发时个别场景达449ms。综合来看，队列导致的ITL膨胀在32并发左右开始变得明显，且伴随p99异常拉升，说明排队效应在长上下文与高并发交错时更加突出。\n\n### 四、吞吐与扩展性\n聚合吞吐方面，短入短出场景4并发6.9 tok/s、16并发55 tok/s、32并发72 tok/s、64并发101 tok/秒，提升明显但已出现增速衰减。长入短出场景从4并发20.5 tok/s提升至64并发117.5 tok/s，是扩展性表现最好的组合，且整体随并发增大有明显收益；短入长出场景最高聚合吞吐在64并发约103.6 tok/秒，长入长出场景最高约103.6 tok/秒，均出现扩展效率衰减。\n\n单请求TPS上，4并发短入短出受异常抖动，16并发之后在4~6之间缓慢上升，未出现线性增长。总体来看，并发从4提升至16时吞吐量提升较大，16→32→64时吞吐增长逐渐放缓，64并发下聚合吞吐约为16并发时的2~ pledge倍而不是4倍，显示扩展效率明显低于线性。吞吐拐点出现在32并发后的部分长入场景，其中64并发·长入长出出现聚合吞吐下降至84 tok/s，说明已经接近系统瓶颈。\n\n### 五、瓶颈定位\n对比长入短出与短入短出，TTFT与prefill_tps在长入短出场景显著升高，如长入短出4并发prefill_tps约909 tok/s，而短入短出只有50 tokens/s；说明长输入的prefill负载较高，但短输入时prefill并非瓶颈。同时Decode阶段吞吐普遍偏低，单请求decode_tps在5~7 tok/s之间，受并发增长影响明显，长入长时decode_tps相对坚挺但仍维持在该区间，表明解码阶段是制约单请求吞吐的主要因素。\n\n从系统整体资源看，长入场景prefill_tps较高，长入长在4/16并发时都表现出较优prefill速度，但64并发时prefill降至约300 tok/s，显示并发增长造成prefill争抢或显存带宽压力增大。与此同时，ITL在64并发时长入场景部分出现150ms左右的高稳定值，decode速度提升有限，暗示可能存在显存/KV Cache限制和调度瓶颈。此外长入长时TTFT普遍偏大、端到端延迟均值偏高，说明该场景对内存带宽、KV Cache以及prefill队列长度都较为敏感。综合来看，瓶颈集中在prefill阶段调度与解码整体速度偏低，且高并发下显存/KV Cache可能已成为约束因素。\n\n### 六、优化建议\n1. 部署参数方面，建议增大 max_num_batched_tokens 并优化 prefill与decode的混合调度，以缓解长输入长输出场景下TTFT高和排队慢的问题，同时尽量扩大 KV Cache 容量限制以覆盖更高并发。  \n2. 调整显存与批处理上限，对长入长出场景可优先限制并发输入长度或启用多轮切分策略，避免 prefill 高并发时引发显存争抢。  \n3. 并发配置上，建议将服务主力并发控制于 16~32 之间，特别是在长上下文场景；64并发下扩展收益已很低，不建议作为生产常态。  \n4. 针对短入短出连接失败问题，建议增加客户端重试、优化连接池配置，必要时调整负载均衡与预热策略，确保瞬时请求压力下连接可用性。  \n5. 若场景允许，可将短入长出的输出上限截断或引入流式输出提前返回，以降低端到端延迟和尾部延迟；同时可提升服务的decode吞吐，如提高并行解码请求数或开启低精度解码优化。"
+ }
+]
